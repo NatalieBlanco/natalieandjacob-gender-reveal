@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#b83f12">
+<title>Natalie &amp; Jacob's Gender Reveal</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 18px 12px 28px;
+    background: #f7efe1; color: #542715;
+    font-family: Georgia, "Times New Roman", serif;
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .invitation {
+    position: relative; width: min(100%, 640px); line-height: 0;
+    box-shadow: 0 8px 28px rgba(70, 37, 16, .15);
+  }
+  .invitation img { display: block; width: 100%; height: auto; }
+  /* Transparent clickable hotspot sits over the orange RSVP button in the artwork. */
+  .rsvp-hotspot {
+    position: absolute;
+    left: 69.7%; top: 65.5%; width: 15.4%; height: 4.9%;
+    display: block; border-radius: 10px;
+    text-decoration: none;
+  }
+  .rsvp-hotspot:focus-visible {
+    outline: 3px solid #245b6a; outline-offset: 3px;
+  }
+  .helper {
+    max-width: 640px; text-align: center; line-height: 1.45;
+    margin: 16px 8px 0; font-size: 16px;
+  }
+  .backup-button {
+    display: inline-block; margin-top: 10px; padding: 13px 26px;
+    border-radius: 9px; background: #b83f12; color: white;
+    font: bold 17px Georgia, "Times New Roman", serif;
+    text-decoration: none; box-shadow: 0 3px 0 #8e2d0b;
+  }
+  .backup-button:hover { background: #96320d; }
+</style>
+</head>
+<body>
+  <main class="invitation" aria-label="Gender reveal invitation">
+    <img src="invitation.png" alt="Autumn pumpkin gender reveal invitation for Natalie and Jacob, November 22, 2026 at 2:00 PM at Frederick Street Park, 168 Frederick St, Santa Cruz, CA 95062.">
+    <a class="rsvp-hotspot" href="https://docs.google.com/forms/d/e/1FAIpQLSflctECKWj9mT5uq9cIemVz7KilOAhLXVZLDXpPCnF1qNIgfA/viewform?usp=publish-editor" target="_blank" rel="noopener"
+       aria-label="RSVP for Natalie and Jacob's gender reveal"></a>
+  </main>
+  <p class="helper">We can’t wait to celebrate with you! Tap the orange RSVP button on the invitation. If it’s hard to tap, use the button below.</p>
+  <a class="backup-button" href="https://docs.google.com/forms/d/e/1FAIpQLSflctECKWj9mT5uq9cIemVz7KilOAhLXVZLDXpPCnF1qNIgfA/viewform?usp=publish-editor" target="_blank" rel="noopener">RSVP&nbsp; ›</a>
+</body>
+</html>
